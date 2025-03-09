@@ -66,7 +66,7 @@ Requiring approval for a Job in code is amazingly simple - just add `approval_re
 We're going to create a new job named `HelloJobsWithApproval`.  Because a job that requires approval *cannot* have 
 sensitive variables, we will also set `has_sensitive_variables` to `False`:
 
-```
+```python
 ...
 
 class HelloJobsWithApproval(Job):
