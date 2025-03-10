@@ -161,15 +161,6 @@ Downloading invoke-2.2.0-py3-none-any.whl (160 kB)
 160.3/160.3 KB 3.5 MB/s eta 0:00:00
 Installing collected packages: invoke
 Successfully installed invoke-2.2.0
-• @xtinalang → ~/outputs/nautobot-app-my-awesome-app $ invoke build
-Building Nautobot with Python 3.11...
-Running docker compose command "build"
-#0 building with "default" instance using docker driver
-#1 [nautobot internall load build definition from Dockerfile
-#1 transferring dockerfile: 3.16KB 0.0s done
-#1 DONE 0.15
-#2 [nautobot auth] nautobot/nautobot-dev:pull token for ghcr.io
-#2 DONE 0.0s
 
 @ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ invoke build
 Building Nautobot with Python 3.11...
