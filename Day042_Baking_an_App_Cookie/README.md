@@ -152,13 +152,7 @@ Writing lock file
 
 @ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ poetry install
 
-@ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ pip install invoke
-Defaulting to user installation because normal site-packages is not writeable
-Collecting invoke
-Downloading invoke-2.2.0-py3-none-any.whl (160 kB)
-160.3/160.3 KB 3.5 MB/s eta 0:00:00
-Installing collected packages: invoke
-Successfully installed invoke-2.2.0
+@ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ poetry shell
 
 @ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ invoke build
 Building Nautobot with Python 3.11...
