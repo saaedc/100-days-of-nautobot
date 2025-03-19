@@ -4,7 +4,7 @@ Let's add a URL pattern to match the view to let the user can see the page.
 
 ## urls.py
 
-The URL file is at the same level as `views.py` named `ursl.py`: 
+The URL file is at the same level as `views.py` named `urls.py`: 
 
 ```
 @ericchou1 ➜ ~/nautobot/examples (develop) $ tree example_app/example_app/
