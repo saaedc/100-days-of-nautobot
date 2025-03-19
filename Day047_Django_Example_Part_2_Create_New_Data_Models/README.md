@@ -73,7 +73,7 @@ from .models import Question
 admin.site.register(Question)
 ```
 
-Let's create superuser for our project: 
+Let's create the superuser "admin" with "admin" for the password for our project: 
 
 ```
 (djangoproject-py3.10) @ericchou1 ➜ ~/djangoproject/mysite $ python manage.py createsuperuser
