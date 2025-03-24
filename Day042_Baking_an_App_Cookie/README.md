@@ -152,6 +152,8 @@ Writing lock file
 
 @ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ poetry install
 
+@ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ poetry shell
+
 @ericchou1 ➜ ~/outputs/nautobot-app-my-awesome-app $ invoke build
 Building Nautobot with Python 3.11...
 Running docker compose command "build"
