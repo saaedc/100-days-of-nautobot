@@ -53,7 +53,7 @@ root@0936589bc72d:/opt/nautobot# apt-get install -y python3-software-properties
 root@0936589bc72d:/opt/nautobot# echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu focal main" > /etc/apt/sources.list.d/ansible.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
 apt-get update
-root@0936589bc72d:/opt/nautobot# apt-get install -y ansible, vim, python3-paramiko
+root@0936589bc72d:/opt/nautobot# apt-get install -y ansible vim python3-paramiko
 root@771b55abc34a:/opt/nautobot# export ANSIBLE_HOST_KEY_CHECKING=False
 
 root@0936589bc72d:/opt/nautobot# ansible --version
