@@ -254,7 +254,25 @@ cp invoke.example.yml invoke.yaml
 
 🔹 Before proceeding, **please ensure that `nautobot_ver` in your `invoke.yaml` matches the Nautobot version defined in `pyproject.toml`**.  
 
-You can update `invoke.yaml` with the correct version using the following commands:
+```
+(nautobot-software-cves-py3.10) @ericchou1 ➜ ~/nautobot-app-software-cves $ cat pyproject.toml 
+...
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+# Used for local development
+nautobot = "^2.3.2"
+
+(nautobot-software-cves-py3.10) @ericchou1 ➜ ~/nautobot-app-software-cves $ cat invoke.yaml 
+---
+nautobot_software_cves:
+  nautobot_ver: "2.3.2"
+  python_ver: "3.11"
+  # local: false
+  # compose_dir: "/full/path/to/nautobot-app-software-cves/development"
+...
+```
+
+If they do not match, you can update `invoke.yaml` with the correct version using the following commands:
 
 ```bash
 nautobot_version=$(awk -F'"' '/nautobot =/ {print $2}' pyproject.toml | tr -d '\n' | tr -d '*^')
