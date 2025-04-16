@@ -275,8 +275,8 @@ nautobot_software_cves:
 If they do not match, you can update `invoke.yaml` with the correct version using the following commands:
 
 ```bash
-nautobot_version=$(awk -F'"' '/nautobot =/ {print $2}' pyproject.toml | tr -d '\n' | tr -d '*^')
-sed -i "s/nautobot_ver: \".*\"/nautobot_ver: \"$nautobot_version\"/" invoke.yaml
+$ nautobot_version=$(awk -F'"' '/nautobot =/ {print $2}' pyproject.toml | tr -d '\n' | tr -d '*^')
+$ sed -i "s/nautobot_ver: \".*\"/nautobot_ver: \"$nautobot_version\"/" invoke.yaml
 ```
 
 Finally, we can run the `poetry` and `invoke` commands to build and start nautobot:
