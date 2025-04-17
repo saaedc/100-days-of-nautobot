@@ -38,7 +38,7 @@ As with the DRY (Don't repeat yourself) concept, many of the shared code for for
 
 Let's try to modify a form to reinforce our learning. 
 
-Going back to our `example_app`, we saw the `ExampleModelUIViewSet` contains form references for `forms.ExampleModelFilterForm`: 
+Going back to our `example_app`, we saw the `ExampleModelUIViewSet` contains form references for `forms.ExampleModelFilterForm` in the `views.py`: 
 
 ```python
 from example_app import filters, forms, tables
@@ -102,7 +102,7 @@ class UsefullinkModelFilterForm(BootstrapMixin, forms.Form):
     description = forms.CharField(max_length=CHARFIELD_MAX_LENGTH, required=False)
 ```
 
-We can wire the new filter form to the `UsefulLinkUIViewSet`: 
+We can wire the new filter form to the `UsefulLinkUIViewSet` in the `views.py`: 
 
 ```python
 class UsefulLinkUIViewSet(views.NautobotUIViewSet):
