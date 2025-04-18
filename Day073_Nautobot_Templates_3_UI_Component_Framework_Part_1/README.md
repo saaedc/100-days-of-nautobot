@@ -45,6 +45,8 @@ class UsefulLink(BaseModel):
 The next step would be to create the `views` for the model. This is where we can start to use Nautobot UI Component framework. We can add the following code to  `views.py` file under `example_app`: 
 
 ```python file=views.py
+from nautobot.apps.ui import ObjectDetailContent, SectionChoices, ObjectFieldsPanel
+
 class UsefulLinkUIViewSet(views.NautobotUIViewSet):
     queryset = UsefulLink.objects.all()
 

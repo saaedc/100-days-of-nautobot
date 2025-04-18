@@ -176,7 +176,7 @@ We can also try to make changes from the code in `view`. From the code, we can s
 
 ![panel_count_original](images/item_count_original.png)
 
-We can make a simple change to a static value, in this example, we hard code it to `100`: 
+When we go back to `views` folder under `nautobot.core` in the `__init__.py`. We can make a simple change to a static value, in this example, we hard code it to `100`: 
 
 ![panel_count_code](images/item_count_code.png)
 
