@@ -1,6 +1,6 @@
 # Capstone Project Part 1. Overview: Nautobot Software CVE Management App
 
-Welcome to the final stretch of our 100 Days of Nautobot journey! Over the next ten days, Days 80 - 89, we'll channel everything we've learned so far into creating a capstone project: Nautobot Software CVE Management APp. We'll guide you through the entire process. By the end of this segment, you'll have a fully functional Nautobot app to showcase your creativity and technical prowess. Let's embark on this journey and build something amazing together!
+Welcome to the final stretch of our 100 Days of Nautobot journey! Over the next ten days, Days 80 - 92, we'll channel everything we've learned so far into creating a capstone project: Nautobot Software CVE Management APp. We'll guide you through the entire process. By the end of this segment, you'll have a fully functional Nautobot app to showcase your creativity and technical prowess. Let's embark on this journey and build something amazing together!
 
 ## Purpose of the App
 
@@ -10,7 +10,7 @@ The **Nautobot Software CVE Management App** is designed to enhance security awa
 
 ## Environment Setup
 
-For the Capstone for Days 80 - 89, we will use [Scenario 2](../Lab_Setup/scenario_2_setup/README.md) lab with Codespace as we have been doing. 
+For the Capstone for Days 80 - 92, we will use [Scenario 2](../Lab_Setup/scenario_2_setup/README.md) lab with Codespace as we have been doing. 
 
 As we have seen in [Day 42](https://github.com/nautobot/100-days-of-nautobot/tree/main/Day042_Baking_an_App_Cookie), when we 'bake an app cookie' we will have a fully functional, self-contained Nautobot app development environment. 
 
