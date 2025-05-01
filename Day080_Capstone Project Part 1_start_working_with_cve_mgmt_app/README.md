@@ -310,6 +310,7 @@ root@1335a55d0eb1:/opt/nautobot# vim nautobot_config.py
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8080", "https://localhost:8080"] 
 ```
+![csrf_trusted_origin](images/CSRF_Trusted_Origin.png)
 
 Next, we will open Nautobot in a separate browser window using the forwarded port. To do this, go to ```PORTS``` and click on the globe icon. 
 
