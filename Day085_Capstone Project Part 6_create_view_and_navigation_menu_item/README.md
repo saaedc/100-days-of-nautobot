@@ -44,7 +44,7 @@ from nautobot.apps.models import PrimaryModel, extras_features
 # If you want to use the extras_features decorator please reference the following documentation
 # https://docs.nautobot.com/projects/core/en/stable/development/core/model-checklist/#extras-features
 @extras_features("custom_links", "custom_validators", "export_templates", "graphql", "webhooks")
-class NautobotSoftwareCvesExampleModel(PrimaryModel):  # pylint: disable=too-many-ancestors
+class NautobotSoftwareCvesModel(PrimaryModel):  # pylint: disable=too-many-ancestors
     """Base model for Nautobot Software Cves app."""
 
     name = models.CharField(max_length=100, unique=True)
@@ -89,7 +89,7 @@ Started
 0.25
 0.2s
 Migrations for 'nautobot_software_cves': nautobot_software_cves/migrations/0001_initial.py
-- Create model NautobotSoftwareCvesExampleModel
+- Create model NautobotSoftwareCvesModel
 (nautobot-software-cves-py3.10) @ericchou → ~/nautobot-app-software-cves
 ```
 
