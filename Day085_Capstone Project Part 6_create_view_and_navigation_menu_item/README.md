@@ -27,7 +27,7 @@ nautobot-1  | Quit the server with CONTROL-C.
 
 ## **Implementation Steps**
 
-### **Optional - If you choose None on Day 80 Step 9**
+### **Optional - If you chose "None" on Day 80 Step 9**
 Since on Day 84 we imported the following in ``tables.py``: from nautobot_software_cves import models we will need to create a ``models.py`` with the following configuration: 
 
 ```python
@@ -68,30 +68,7 @@ class NautobotSoftwareCvesModel(PrimaryModel):  # pylint: disable=too-many-ances
 ```
 ** Note: Make sure to stop the containers, do an invoke makemigrations and then invoke debug 
 
-```
-Container nautobot-software-cves-redis-1 Stopped
-canceled
-(nautobot-software-cves-py3.10) @ericchou → ~/nautobot-app-software-cves $ invoke makemigrations
-Running docker compose command "ps —-services —filter status=running"
-Running docker compose command "run —-rm --entrypoint='nautobot-server makemigrations nautobot_software_cves' n
-autobot"
-[+] Creating 2/0
-• Container nautobot-software-cves-db-1
-Created
-• Container nautobot-software-cves-redis-1 Created
-0.05
-0.0s
-I+] Running 2/2
-• Container nautobot-software-cves-redis-1
-Started
-• Container nautobot-software-cves-db-1
-Started
-0.25
-0.2s
-Migrations for 'nautobot_software_cves': nautobot_software_cves/migrations/0001_initial.py
-- Create model NautobotSoftwareCvesModel
-(nautobot-software-cves-py3.10) @ericchou → ~/nautobot-app-software-cves
-```
+![cves_navigation_menu](images/models.png)
 
 
 ### **1. Implement a List ViewSet**
