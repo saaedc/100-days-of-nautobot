@@ -30,7 +30,7 @@ nautobot-1  | Quit the server with CONTROL-C.
 
 ### **1. Define a Job in `jobs.py`**
 
-Inside your Nautobot plugin folder (`nautobot_software_cves/`), create a file named `jobs.py`. This is where we will define the CVE loader job.
+Inside your Nautobot plugin folder (`nautobot_software_cves/`), create a file named `jobs.py`. This is where we will define the CVE loader job. Remember to do ```invoke post-upgrade```.
 
 ```python
 """ 
