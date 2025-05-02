@@ -30,7 +30,7 @@ nautobot-1  | Quit the server with CONTROL-C.
 ### **1. Implement a Custom API View**
 Since we are not using a dedicated data model for CVEs, we won’t be using a `ModelSerializer`. Instead, we’ll return the `cves` json data directly from the `custom_field_data` of each `SoftwareVersion`.
 
-Inside **`api/views.py`**, add the following code:
+Inside **`nautobot_software_cves/api/views.py`**, add the following code:
 
 ````python
 from django.shortcuts import get_object_or_404
