@@ -65,7 +65,7 @@ To make the view accessible via a REST endpoint, register it in the plugin’s *
 >[!TIP]
 > Delete or comment out the existing `urlpatterns` as shown below. 
 
-Inside **`api/urls.py`**, add:
+Inside **`nautobot_software_cves/api/urls.py`**, add:
 
 ````python
 from django.urls import path
