@@ -27,50 +27,6 @@ nautobot-1  | Quit the server with CONTROL-C.
 
 ## **Implementation Steps**
 
-### **Optional - If you chose "None" on Day 80 Step 9**
-Since on Day 84 we imported the following in ``tables.py``: from nautobot_software_cves import models we will need to create a ``models.py`` with the following configuration: 
-
-```python
-"""Models for Nautobot Software Cves."""
-
-# Django imports
-from django.db import models
-
-# Nautobot imports
-from nautobot.apps.models import PrimaryModel, extras_features
-
-# If you want to choose a specific model to overload in your class declaration, please reference the following documentation:
-# how to chose a database model: https://docs.nautobot.com/projects/core/en/stable/plugins/development/#database-models
-# If you want to use the extras_features decorator please reference the following documentation
-# https://docs.nautobot.com/projects/core/en/stable/development/core/model-checklist/#extras-features
-@extras_features("custom_links", "custom_validators", "export_templates", "graphql", "webhooks")
-class NautobotSoftwareCvesExampleModel(PrimaryModel):  # pylint: disable=too-many-ancestors
-    """Base model for Nautobot Software Cves app."""
-
-    name = models.CharField(max_length=100, unique=True)
-    description = models.CharField(max_length=200, blank=True)
-    # additional model fields
-
-    class Meta:
-        """Meta class."""
-
-        ordering = ["name"]
-
-        # Option for fixing capitalization (i.e. "Snmp" vs "SNMP")
-        verbose_name = "Nautobot Software Cves"
-
-        # Option for fixing plural name (i.e. "Chicken Tenders" vs "Chicken Tendies")
-        verbose_name_plural = "Nautobot Software Cvess"
-
-    def __str__(self):
-        """Stringify instance."""
-        return self.name
-```
-** Note: Make sure to stop the containers, do an invoke makemigrations and then invoke debug 
-
-![cves_navigation_menu](images/models.png)
-
-
 ### **1. Implement a List ViewSet**
 Nautobot provides the **`ObjectListViewMixin`** class, which simplifies the implementation of list views. We will create a new ViewSet named **`SoftwareCvesStatusViewSet`** that uses the `CveStatusTable` from Day 84.
 
