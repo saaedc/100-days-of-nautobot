@@ -59,7 +59,7 @@ class SoftwareVersionCVEsView(APIView):
 - Returns the `cves` as a JSON response.
 
 
-### **2. Add the Corresponding URL in `api/urls.py`**
+### **2. Add the Corresponding URL in `nautobot_software_cves/api/urls.py`**
 To make the view accessible via a REST endpoint, register it in the plugin’s **API URL config**.
 
 >[!TIP]
